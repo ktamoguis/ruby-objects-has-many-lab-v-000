@@ -14,6 +14,10 @@ class Author
     @@post_count += 1
   end
 
+  def posts
+    @posts
+  end
+
   def add_post_by_title(posttitle)
     newpost = Post.new(posttitle)
     newpost.author = self
